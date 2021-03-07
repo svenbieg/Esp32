@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Esp32 Debug|Win32">
+      <Configuration>Esp32 Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Esp32 Release|Win32">
+      <Configuration>Esp32 Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup>
+    <TargetConfig Condition="'$(Configuration)'=='Esp32 Debug'">Debug</TargetConfig>
+    <TargetConfig Condition="'$(Configuration)'=='Esp32 Release'">Release</TargetConfig>
+    <TargetPlatform Condition="'$(Configuration)'=='Esp32 Debug'">Esp32</TargetPlatform>
+    <TargetPlatform Condition="'$(Configuration)'=='Esp32 Release'">Esp32</TargetPlatform>
+  </PropertyGroup>
+</Project>

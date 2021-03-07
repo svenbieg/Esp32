@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(SolutionDir)Esp\Configuration\Default.targets" />
+  <Target Name="IdfInstall" Condition="!Exists('$(IdfPath)')" DependsOnTargets="GitInstall">
+    <Message Text="Downloading Esp-Idf..." Importance="High" />
+    <MakeDir Directories="$(HomePath).espressif" Condition="!Exists('$(HomePath).espressif')" />
+    <Exec Command="%22$(GitExe)%22 clone --recursive https://github.com/espressif/esp-idf.git" WorkingDirectory="$(HomePath).espressif" /> <!-- -b release/v4.1 -->
+  </Target>
+  <Target Name="IdfToolsInstall" Condition="!Exists('$(SolutionDir)CMakeLists.txt')" DependsOnTargets="PythonInstall;IdfUpdate">
+    <Message Text="Installing Idf-Tools..." Importance="High" />
+    <ItemGroup>
+      <SetupLines Include="@echo off" />
+      <SetupLines Include="set PATH=%%PATH%%%3B$(PythonPath)%3B$(GitPath)" />
+      <SetupLines Include="set IDF_PATH=$(IdfPath)" />
+      <SetupLines Include="python.exe -m pip install --upgrade pip" />
+      <SetupLines Include="python.exe tools\idf_tools.py install" />
+      <SetupLines Include="python.exe tools\idf_tools.py install-python-env" />
+      <SetupLines Include="python.exe -m pip install --user -r requirements.txt" />
+    </ItemGroup>
+    <Exec Command="@(SetupLines->'%(Identity)&amp;')" WorkingDirectory="$(IdfPath)" />
+    <WriteLinesToFile File="$(SolutionDir)CMakeLists.txt" Lines="#" Overwrite="true" />
+  </Target>
+</Project>

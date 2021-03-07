@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Devices\Cpu.cpp">
+      <Filter>Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Main.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Devices\MemoryClass.cpp">
+      <Filter>Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Actors\RgbLeds.cpp">
+      <Filter>Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Devices\Gpio\AnalogHelper.cpp">
+      <Filter>Devices\Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Devices\Gpio\PwmHelper.cpp">
+      <Filter>Devices\Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Network\WiFi\WiFiHelper.cpp">
+      <Filter>Network\WiFi</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Devices\ClockHelper.cpp">
+      <Filter>Devices</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Devices\Gpio\TouchPin.cpp">
+      <Filter>Devices\Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Devices\Gpio\ImpulsePin.cpp">
+      <Filter>Devices\Gpio</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)TaskClasses.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Mutex.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)System.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\heap_caps.c">
+      <Filter>Components\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\heap_caps_init.c">
+      <Filter>Components\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\multi_heap.c">
+      <Filter>Components\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\mem_block_group.c">
+      <Filter>Components\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\mem_block.c">
+      <Filter>Components\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\mem_block_list.c">
+      <Filter>Components\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\mem_block_map.c">
+      <Filter>Components\heap</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\heap_trace_standalone.c">
+      <Filter>Components\heap</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Devices\Cpu.h">
+      <Filter>Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Devices\MemoryClass.h">
+      <Filter>Devices</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Actors\RgbLeds.h">
+      <Filter>Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Devices\Gpio\AnalogHelper.h">
+      <Filter>Devices\Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Devices\Gpio\PwmHelper.h">
+      <Filter>Devices\Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Network\WiFi\WiFiHelper.h">
+      <Filter>Network\WiFi</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Devices\Gpio\TouchPin.h">
+      <Filter>Devices\Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Devices\Gpio\ImpulsePin.h">
+      <Filter>Devices\Gpio</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TaskClasses.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Devices\I2C\I2CHelper.h">
+      <Filter>Devices\I2C</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Mutex.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)System.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\multi_heap_platform.h">
+      <Filter>Components\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\include\esp_heap_caps_init.h">
+      <Filter>Components\heap\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\include\esp_heap_caps.h">
+      <Filter>Components\heap\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\include\multi_heap.h">
+      <Filter>Components\heap\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\multi_heap_internal.h">
+      <Filter>Components\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\mem_block_group.h">
+      <Filter>Components\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\mem_block_map.h">
+      <Filter>Components\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\mem_block.h">
+      <Filter>Components\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\mem_block_list.h">
+      <Filter>Components\heap</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\include\esp_heap_trace.h">
+      <Filter>Components\heap\include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\heap_private.h">
+      <Filter>Components\heap</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Configuration\Default.props">
+      <Filter>Configuration</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Configuration\Default.targets">
+      <Filter>Configuration</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Configuration\Configuration.props">
+      <Filter>Configuration</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Configuration\Platform.props">
+      <Filter>Configuration</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)sdkconfig" />
+    <None Include="$(MSBuildThisFileDirectory)Readme.md" />
+    <None Include="$(MSBuildThisFileDirectory)Components\heap\linker.lf">
+      <Filter>Components\heap</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Components\heap\component.mk">
+      <Filter>Components\heap</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Components\heap\Kconfig">
+      <Filter>Components\heap</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Components\heap\Readme.md">
+      <Filter>Components\heap</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Components\heap\include\heap_trace.inc">
+      <Filter>Components\heap\include</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Devices">
+      <UniqueIdentifier>{c77a6536-ec44-418c-ae51-24de90203e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{60d5f9a6-f8c0-4cf2-9550-4c9cdf13b36a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actors">
+      <UniqueIdentifier>{20faf50a-ffc8-4e80-b6ae-73fee95bee66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{81ea10e5-e0cd-4f91-b048-7d8e85ba2654}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Devices\Gpio">
+      <UniqueIdentifier>{540d1871-1963-4547-8554-1b1eff83c9bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\WiFi">
+      <UniqueIdentifier>{9d0ef625-1d4a-45fb-8feb-d961486b8cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Devices\I2C">
+      <UniqueIdentifier>{73cb78f5-a7b4-4448-a049-6d24f50a8828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{27fa2f7a-08b2-49a8-a357-dc5318bd109f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\heap">
+      <UniqueIdentifier>{c99e23ef-30fc-4877-8321-1a028c9d980e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\heap\include">
+      <UniqueIdentifier>{f2c4abb0-f039-4505-b039-5b724e80bc36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)Components\heap\CMakeLists.txt">
+      <Filter>Components\heap</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

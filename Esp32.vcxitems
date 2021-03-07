@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{575D39B9-A994-4328-A936-D56C4A1BAFD7}</ItemsProjectGuid>
+    <ItemsSccProjectName>$/Shared/Esp32</ItemsSccProjectName>
+    <ItemsSccAuxPath>https://svenbieg.visualstudio.com</ItemsSccAuxPath>
+    <ItemsSccLocalPath>.</ItemsSccLocalPath>
+    <ItemsSccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</ItemsSccProvider>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Actors\RgbLeds.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\heap_private.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\include\esp_heap_caps.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\include\esp_heap_caps_init.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\include\esp_heap_trace.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\include\multi_heap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\mem_block.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\mem_block_group.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\mem_block_list.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\multi_heap_internal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\mem_block_map.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Components\heap\multi_heap_platform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Devices\Cpu.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Devices\Gpio\AnalogHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Devices\Gpio\ImpulsePin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Devices\Gpio\PwmHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Devices\Gpio\TouchPin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Devices\I2C\I2CHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Devices\MemoryClass.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Mutex.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Network\WiFi\WiFiHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)System.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TaskClasses.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Components\heap\component.mk" />
+    <None Include="$(MSBuildThisFileDirectory)Components\heap\include\heap_trace.inc" />
+    <None Include="$(MSBuildThisFileDirectory)Components\heap\Kconfig" />
+    <None Include="$(MSBuildThisFileDirectory)Components\heap\linker.lf" />
+    <None Include="$(MSBuildThisFileDirectory)Components\heap\Readme.md" />
+    <None Include="$(MSBuildThisFileDirectory)Configuration\Configuration.props" />
+    <None Include="$(MSBuildThisFileDirectory)Configuration\Default.props" />
+    <None Include="$(MSBuildThisFileDirectory)Configuration\Default.targets" />
+    <None Include="$(MSBuildThisFileDirectory)Configuration\Platform.props" />
+    <None Include="$(MSBuildThisFileDirectory)Readme.md" />
+    <None Include="$(MSBuildThisFileDirectory)sdkconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Actors\RgbLeds.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\heap_caps.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\heap_caps_init.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\heap_trace_standalone.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\mem_block_group.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\multi_heap.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\mem_block.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\mem_block_list.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Components\heap\mem_block_map.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Devices\ClockHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Devices\Gpio\AnalogHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Devices\Gpio\ImpulsePin.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Devices\Gpio\PwmHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Devices\Gpio\TouchPin.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Devices\Cpu.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Devices\MemoryClass.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Main.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Mutex.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Network\WiFi\WiFiHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)System.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TaskClasses.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)Components\heap\CMakeLists.txt" />
+  </ItemGroup>
+</Project>

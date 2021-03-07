@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(SolutionDir)Esp\Configuration\Default.props" />
+  <PropertyGroup>
+    <!-- Directories -->
+    <IdfPath>$(HomePath).espressif\esp-idf\</IdfPath>
+    <CompilerPath>$(IdfToolsPath)xtensa-esp32-elf\esp-2020r3-8.4.0\xtensa-esp32-elf\</CompilerPath>
+    <IdfComponents>bt driver esp32 esp_adc_cal esptool_py freertos log lwip main newlib nvs_flash spi_flash tcpip_adapter xtensa-debug-module</IdfComponents>
+    <IdfExtraComponentDir>Esp32\Components</IdfExtraComponentDir>
+    <!-- Settings -->
+    <ComPortBaud>115200</ComPortBaud>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Preprocessor -->
+    <PreprocessorList Include="ESP32;ESP_PLATFORM;MULTI_HEAP_FREERTOS" />
+    <!-- Include -->
+    <IdfIncludeList Include="$(VC_IncludePath)" />
+    <IdfIncludeList Include="$(IdfPath)components\app_update\include" />
+    <IdfIncludeList Include="$(IdfPath)components\bootloader_support\include" />
+    <IdfIncludeList Include="$(IdfPath)components\driver\esp32\include" />
+    <IdfIncludeList Include="$(IdfPath)components\driver\include" />
+    <IdfIncludeList Include="$(IdfPath)components\esp32\include" />
+    <IdfIncludeList Include="$(IdfPath)components\esp_adc_cal\include" />
+    <IdfIncludeList Include="$(IdfPath)components\esp_common\include" />
+    <IdfIncludeList Include="$(IdfPath)components\esp_event\include" />
+    <IdfIncludeList Include="$(IdfPath)components\esp_netif\include" />
+    <IdfIncludeList Include="$(IdfPath)components\esp_ringbuf\include" />
+    <IdfIncludeList Include="$(IdfPath)components\esp_rom\include" />
+    <IdfIncludeList Include="$(IdfPath)components\esp_system\include" />
+    <IdfIncludeList Include="$(IdfPath)components\esp_timer\include" />
+    <IdfIncludeList Include="$(IdfPath)components\esp_wifi\include" />
+    <IdfIncludeList Include="$(IdfPath)components\freertos\include" />
+    <IdfIncludeList Include="$(IdfPath)components\freertos\xtensa\include" />
+    <!--<IdfIncludeList Include="$(IdfPath)components\heap\include" />-->
+    <IdfIncludeList Include="$(IdfPath)components\log\include" />
+    <IdfIncludeList Include="$(IdfPath)components\lwip\include\apps\dhcpserver" />
+    <IdfIncludeList Include="$(IdfPath)components\lwip\include\apps\ping" />
+    <IdfIncludeList Include="$(IdfPath)components\lwip\include\apps\sntp" />
+    <IdfIncludeList Include="$(IdfPath)components\lwip\include\apps" />
+    <IdfIncludeList Include="$(IdfPath)components\lwip\lwip\src\include" />
+    <IdfIncludeList Include="$(IdfPath)components\lwip\port\esp32\include" />
+    <IdfIncludeList Include="$(IdfPath)components\mbedtls\mbedtls\include" />
+    <IdfIncludeList Include="$(IdfPath)components\mbedtls\port\include" />
+    <IdfIncludeList Include="$(IdfPath)components\mbedtls\port\include\esp32" />
+    <IdfIncludeList Include="$(IdfPath)components\newlib\platform_include" />
+    <IdfIncludeList Include="$(IdfPath)components\nvs_flash\include" />
+    <IdfIncludeList Include="$(IdfPath)components\soc\include" />
+    <IdfIncludeList Include="$(IdfPath)components\soc\esp32\include" />
+    <IdfIncludeList Include="$(IdfPath)components\spi_flash\include" />
+    <IdfIncludeList Include="$(IdfPath)components\xtensa\include" />
+    <IdfIncludeList Include="$(SolutionDir)Esp32\Components\heap\include" />
+  </ItemGroup>
+</Project>
